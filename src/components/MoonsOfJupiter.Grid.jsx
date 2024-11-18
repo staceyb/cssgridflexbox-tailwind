@@ -1,13 +1,14 @@
 import '../css/style.css';
+import '../css/moonsofjupiter.css';
 
 function MoonsOfJupiterGrid() {
   return (
     <>
-      <div>
-        <h1>Galilean Moons of Jupiter</h1>
+      <h1>Galilean Moons of Jupiter</h1>
+      <div className="grid-container">
         <figure>
           <img
-            src="https://assets/codepen.io/296057/fem-io.jpg"
+            src="/images/io.jpg"
             alt="A pizza looking moon. The outline of an erupting volcano is on the left."
           />
           <figcaption>
@@ -24,7 +25,7 @@ function MoonsOfJupiterGrid() {
         </figure>
         <figure>
           <img
-            src="https://assets/codepen.io/296057/fem-callisto.jpg"
+            src="/images/callisto.jpg"
             alt="A white moon with orange cracks all over the surface."
           />
           <figcaption>
@@ -43,7 +44,7 @@ function MoonsOfJupiterGrid() {
         </figure>
         <figure>
           <img
-            src="https://assets/codepen.io/296057/fem-europa.jpg"
+            src="/images/europa.jpg"
             alt="A pizza looking moon. The outline of an erupting volcano is on the left."
           />
           <figcaption>
@@ -63,7 +64,7 @@ function MoonsOfJupiterGrid() {
         </figure>
         <figure>
           <img
-            src="https://assets/codepen.io/296057/fem-ganymede.jpg"
+            src="/images/ganymede.jpg"
             alt="A moon that looks similar to our own, with a giant crater in the upper right."
           />
           <figcaption>

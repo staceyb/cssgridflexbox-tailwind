@@ -188,19 +188,20 @@ html {
   font-size: 62.5%;
 }
 body {
-  background: #d4d4d4;
+  background: black;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Open Sans', sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.5;
+  color: whitesmoke;
 }
 h1 {
   font-family: 'blanchcaps_inline', sans-serif;
   text-align: center;
   font-weight: normal;
   margin: 0;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 h2,
 h3,
@@ -227,4 +228,9 @@ img {
 figure {
   margin: 0;
   padding: 0;
+}
+
+a {
+  color: whitesmoke;
+  font-style: normal;
 }

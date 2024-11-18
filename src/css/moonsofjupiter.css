@@ -1,0 +1,17 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin: 2rem;
+}
+
+figure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 2rem;
+}
+
+cite {
+  margin-left: 0.5rem;
+}
