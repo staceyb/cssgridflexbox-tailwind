@@ -16,27 +16,16 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
-    "autoprefixer-stylus": "^1.0.0",
     "camelcase": "^6.2.1",
     "dotenv": "^10.0.0",
     "dotenv-expand": "^5.1.0",
-    "mini-css-extract-plugin": "^2.4.5",
-    "postcss": "^8.4.31",
-    "postcss-flexbugs-fixes": "^5.0.2",
-    "postcss-loader": "^6.2.1",
-    "postcss-normalize": "^10.0.1",
-    "postcss-preset-env": "^7.0.1",
     "prompts": "^2.4.2",
-    "prop-types": "15.7.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0",
     "react-transition-group": "^4.4.5",
-    "style-loader": "^3.3.1",
-    "stylus": "0.55.0",
     "tailwindcss": "^3.0.2",
-    "vite-tsconfig-paths": "^5.1.2",
-    "web-vitals": "^2.1.4"
+    "vite-tsconfig-paths": "^5.1.2"
   },
   "devDependencies": {
     "autoprefixer": "10.4.20",

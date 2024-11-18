@@ -2,12 +2,8 @@
   "workbench.colorCustomizations": {
     "titleBar.activeForeground": "#000",
     "titleBar.inactiveForeground": "#000000CC",
-    "titleBar.activeBackground": "#00999F",
-    "titleBar.inactiveBackground": "#00999F"
-  },
-  "emmet.includeLanguages": {
-    "javascript": "javascriptreact",
-    "vue-html": "html"
+    "titleBar.activeBackground": "#fc973eca",
+    "titleBar.inactiveBackground": "#fc973eca"
   },
   "emmet.triggerExpansionOnTab": true,
   "editor.formatOnSave": true,
