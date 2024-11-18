@@ -6,7 +6,7 @@ img {
   max-width: 100%;
 }
 
-.grid-container {
+.grid-container-mars {
   display: grid;
   grid-template-columns: 2fr 1fr;
   /* grid-template-areas:
@@ -57,7 +57,7 @@ img {
 }
 
 @media (max-width: 700px) {
-  .grid-container {
+  .grid-container-mars {
     grid-template-columns: 1fr;
   }
 

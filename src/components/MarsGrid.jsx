@@ -5,7 +5,7 @@ function MarsGrid() {
   return (
     <>
       <h1>Mars</h1>
-      <div className="grid-container">
+      <div className="grid-container-mars">
         <img
           className="one"
           src="/images/PIA01546~orig.jpg"
