@@ -1,13 +1,11 @@
 import { Route, Routes } from 'react-router-dom';
 import NotFound from './components/NotFound';
-import HomePage from './components/HomePage';
-
-import './css/style.css';
+import MoonsofJupiterGrid from './components/MoonsOfJupiter.Grid';
 
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<HomePage />} />
+      <Route path="/" element={<MoonsofJupiterGrid />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
   );
