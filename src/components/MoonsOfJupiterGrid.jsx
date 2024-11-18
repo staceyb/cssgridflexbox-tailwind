@@ -68,10 +68,10 @@ function MoonsOfJupiterGrid() {
             alt="A moon that looks similar to our own, with a giant crater in the upper right."
           />
           <figcaption>
-            This enhanced image of the jovian moon Ganymeded was obtained the
-            the JunoCam imager aboard NASA's Juno spacecraft during the
-            mission's June 7,2021, flyby of the icy moon on Juno's 34th pass
-            close to Jupiter.
+            This enhanced image of the jovian moon Ganymede was obtained the the
+            JunoCam imager aboard NASA's Juno spacecraft during the mission's
+            June 7,2021, flyby of the icy moon on Juno's 34th pass close to
+            Jupiter.
             <cite>
               <a
                 href="https://images.nasa.gov/details/PIA25028"

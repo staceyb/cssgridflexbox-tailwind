@@ -1,0 +1,58 @@
+body {
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    'sol10 sol10'
+    'mars meteorite'
+    'mars microscope'
+    'intrepid intrepid';
+  gap: 1rem;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.one {
+  /* grid-column: 1/3; */
+  grid-column: 1 / span 3;
+  grid-area: sol10;
+}
+
+.two {
+  /* grid-column: 1/2; 
+   grid-row: 2/4; */
+  grid-column: 1;
+  grid-row: 2 / span 2;
+  grid-area: mars;
+}
+
+.three {
+  /* grid-column: 1/3; */
+  grid-column: 1 / span 2;
+  grid-area: intrepid;
+}
+
+.four {
+  /* grid-column: 2/3;
+    grid-row: 2/3; */
+  grid-column: 2;
+  grid-row: 2;
+
+  grid-area: meteorite;
+}
+
+.five {
+  /* grid-column: 2/3;
+    grid-row: 3/4; */
+  grid-column: 2;
+  grid-row: 3;
+
+  grid-area: microscope;
+}
