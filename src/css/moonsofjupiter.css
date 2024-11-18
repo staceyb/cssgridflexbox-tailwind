@@ -18,6 +18,33 @@ cite {
 
 figure:nth-child(3) {
   grid-column: 1/2;
-  grid-row: 1/4;
-  display: block;
+  grid-row: 1 / span 3;
+}
+
+figure:last-child {
+  grid-column: 1 / span 2;
+}
+
+@media (max-width: 700px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+
+  figure:nth-child(3) {
+    grid-column: 1;
+    grid-row: auto;
+  }
+
+  figure:last-child {
+    grid-column: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  figure {
+    grid-template-columns: 1fr;
+  }
+  figcaption {
+    margin: 1rem;
+  }
 }
