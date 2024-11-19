@@ -1,0 +1,56 @@
+.card {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #ccc;
+  gap: 0;
+  align-items: center;
+}
+
+.card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.card img {
+  max-width: 100%;
+  border-radius: 5px;
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.card p {
+  margin: 0;
+}
+
+.card:last-child {
+  border-bottom: none;
+}
+
+.feature img {
+  grid-column: 1/3;
+  grid-row: 2/3;
+}
+
+.feature.card p {
+  display: block;
+}
+
+.feature.card p:last-child {
+  grid-row: 3/4;
+  margin-top: 2rem;
+}
+
+.feature.card p:not(:has(a)) {
+  display: none;
+}
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 700px) {
+}
+
+@media (min-width: 900px) {
+}

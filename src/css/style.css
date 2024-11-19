@@ -186,7 +186,15 @@ input::-moz-focus-inner {
 }
 html {
   font-size: 62.5%;
+  box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   background: black;
   -webkit-font-smoothing: antialiased;
@@ -196,6 +204,7 @@ body {
   line-height: 1.5;
   color: whitesmoke;
 }
+
 h1 {
   font-family: 'blanchcaps_inline', sans-serif;
   text-align: center;
@@ -233,4 +242,16 @@ figure {
 a {
   color: whitesmoke;
   font-style: normal;
+}
+
+.button {
+  background-color: #2d697c;
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.button:hover {
+  background-color: #327c94;
 }
