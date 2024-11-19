@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 3rem 1rem;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid whitesmoke;
   gap: 0;
   align-items: center;
 }
@@ -16,7 +16,6 @@
 .card img {
   max-width: 100%;
   border-radius: 5px;
-  grid-column: 2;
   grid-row: 1 / span 2;
 }
 
@@ -72,7 +71,7 @@
 
   .feature.card {
     grid-column: 1 / 3;
-    border: 1px solid #ccc;
+    border: 1px solid whitesmoke;
     padding: 1rem;
     border-radius: 5px;
   }
@@ -99,4 +98,68 @@
 }
 
 @media (min-width: 900px) {
+  .card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-areas:
+      'featured featured  earth'
+      'featured featured  mars'
+      'featured featured  jupiter'
+      'saturn neptune pluto';
+  }
+
+  .card {
+    border: 1px solid whitesmoke;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'title photo'
+      'button photo';
+    padding: 1rem;
+    align-items: stretch;
+  }
+
+  .card h2 {
+    grid-area: title;
+  }
+  .card img {
+    grid-area: photo;
+  }
+
+  .card p:last-child {
+    grid-area: button;
+  }
+
+  .feature.card {
+    grid-area: featured;
+    display: block;
+  }
+
+  .card:nth-child(2) {
+    grid-area: earth;
+  }
+
+  .card:nth-child(3) {
+    grid-area: mars;
+  }
+
+  .card:nth-child(4) {
+    grid-area: jupiter;
+  }
+
+  .card:nth-child(5) {
+    grid-area: saturn;
+  }
+
+  .card:nth-child(6) {
+    grid-area: neptune;
+  }
+
+  .card:nth-child(7) {
+    grid-area: pluto;
+    border: 1px solid whitesmoke;
+  }
+
+  .button {
+    font-size: 1.2rem;
+  }
 }
