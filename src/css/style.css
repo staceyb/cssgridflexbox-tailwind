@@ -1,3 +1,8 @@
+:root {
+  --astroblue: #327c94;
+  --border: whitesmoke;
+}
+
 @font-face {
   font-family: 'haymakerregular';
   src: url('./fonts/haymaker-webfont.eot');
@@ -245,7 +250,7 @@ a {
 }
 
 .button {
-  background-color: #2d697c;
+  background-color: var(--astroblue);
   padding: 0.5rem;
   border-radius: 5px;
   color: white;
@@ -253,5 +258,5 @@ a {
   font-size: 0.8rem;
 }
 .button:hover {
-  background-color: #327c94;
+  background-color: var(--astroblue);
 }

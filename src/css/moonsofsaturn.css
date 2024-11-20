@@ -1,0 +1,268 @@
+.moonsofsaturn h1 {
+  padding: 0 1rem;
+}
+
+.moonsofsaturn h2 {
+  font-size: 1.4rem;
+}
+
+.moonsofsaturn .button {
+  font-size: 1.4rem;
+}
+
+.msCard {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid var(--border);
+  column-gap: 1rem;
+  row-gap: 1rem;
+  align-items: center;
+}
+
+.msCard:first-of-type {
+  display: block;
+}
+
+.msCard h2 {
+  grid-column: 1 /2;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.msCard img {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  max-width: 100%;
+  border-radius: 5px;
+  align-self: start;
+}
+
+.msCard .text {
+  margin: 1rem 1rem 2rem 0;
+}
+
+.msContainer:first-child {
+  display: block;
+}
+
+.additionalLinks {
+  list-style: none;
+  padding: 1rem;
+}
+
+.additionalLinks li {
+  border-bottom: 1px solid var(--border);
+}
+
+.additionalLinks li a {
+  font-size: 1.6rem;
+  font-weight: bold;
+
+  padding: 3rem 1rem;
+  color: var(--astroblue);
+  display: inline-block;
+}
+
+@media (min-width: 500px) {
+  .msContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .msCard {
+    grid-template-columns: 3fr 1fr;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+  }
+
+  .msCard:first-of-type {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-template-rows: auto;
+  }
+
+  .msCard:first-of-type img {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    max-width: 100%;
+  }
+
+  .msCard:first-of-type h2 {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+  }
+  .msCard:first-of-type .text {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+    margin-left: 0;
+  }
+  .msCard:first-of-type .link {
+    grid-row: 4;
+  }
+  .msCard h2 {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    align-self: normal;
+  }
+  .msCard img {
+    grid-column: 4 / span 1;
+    grid-row: 1;
+    max-width: 100px;
+  }
+
+  .msCard .text {
+    grid-column: 1 / span 4;
+    grid-row: 2;
+    align-self: start;
+    margin: 1rem 1rem;
+  }
+
+  .msCard .link {
+    grid-row: 4;
+    grid-column: 1 / span 4;
+    margin-top: 0;
+  }
+
+  .msCard:last-child {
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+@media (min-width: 750px) {
+  .msContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+
+  .msCard {
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows:
+      minmax(0, 0.7fr)
+      minmax(0, 1fr) auto;
+    border-top: 1px solid var(--border);
+  }
+
+  .msCard h2 {
+    grid-column: 1 / span 2;
+  }
+
+  .msCard img {
+    grid-column: 3 / span 2;
+    grid-row: 1;
+    max-width: 150px;
+  }
+
+  .msCard link {
+    grid-row: 3;
+  }
+
+  .msCard:first-of-type {
+    grid-column: 1 / span 3;
+    grid-template-rows:
+      minmax(0, 0.7fr)
+      minmax(0, 1fr) auto;
+    grid-row: 1 / span 2;
+    grid-template-rows: auto;
+  }
+
+  .msCard:nth-of-type(2) {
+    grid-column: 4;
+    grid-row: 1;
+    display: block;
+  }
+
+  .msCard:nth-of-type(2) .text,
+  .msCard:nth-of-type(3) .text {
+    display: none;
+  }
+
+  .msCard:nth-of-type(3) {
+    grid-column: 4;
+    grid-row: 2;
+    display: block;
+  }
+
+  .msCard:nth-of-type(4) {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  .msCard:nth-of-type(5) {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+  }
+  .additionalLinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    border-bottom: 1px solid var(--border);
+    padding: 0;
+    margin: 0;
+  }
+
+  .additionalLinks li {
+    border-bottom: 0;
+    border-right: 1px solid var(--border);
+  }
+}
+
+@media (min-width: 1000px) {
+  .msCard {
+    grid-template-rows: subgrid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .msCard:first-of-type {
+    grid-column: 1 / span 2;
+    grid-template-rows:
+      minmax(0, 1fr)
+      minmax(0, 0.1fr) minmax(0, 0.2fr) auto;
+  }
+
+  .msCard h2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-bottom: 1rem;
+  }
+
+  .msCard img {
+    grid-column: 1 /2;
+    grid-row: 1/2;
+  }
+
+  .msCard .link {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 1;
+    align-self: end;
+  }
+
+  .msCard:nth-child(2) {
+    grid-column: 3;
+    grid-row: 1 / span 1;
+    display: grid;
+  }
+
+  .msCard:nth-child(3) {
+    grid-column: 4;
+    grid-row: 1;
+    grid-row: 1 / span 1;
+    display: grid;
+  }
+
+  .msCard:nth-child(4) {
+    grid-column: 3;
+    grid-row: 2 / span 1;
+  }
+
+  .msCard:nth-child(5) {
+    grid-column: 4;
+    grid-row: 2 / span 1;
+  }
+
+  .msCard:nth-child(4) .text,
+  .msCard:nth-child(5) .text {
+    display: none;
+  }
+}
