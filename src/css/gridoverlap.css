@@ -1,0 +1,63 @@
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+/* Basic figure and caption styling */
+/* Turn off margin, set by browser */
+figure {
+  margin: 0;
+  padding: 0;
+}
+/* caption styling  */
+figcaption {
+  background-color: #001219;
+  color: white;
+  padding: 1rem;
+}
+/* reduces the top margin on the h2, bottom on the p, and leaves a 0.5rem gap between the two */
+figcaption * {
+  margin: 0.5rem;
+}
+
+figure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 60% 40%;
+}
+img {
+  /* image must stretch across all rows */
+  grid-row: 1/3;
+  grid-column: 1/2;
+}
+figcaption {
+  grid-column: 1/2;
+  /* caption overlaps the last row with the image */
+  grid-row: 2/3;
+  opacity: 0.6;
+}
+
+/* Basic figure and caption styling */
+/* Turn off margin, set by browser */
+figure {
+  margin: 0;
+  padding: 0;
+}
+/* caption styling  */
+figcaption {
+  background-color: #001219;
+  color: white;
+  padding: 1rem;
+}
+/* reduces the top margin on the h2, bottom on the p, and leaves a 0.5rem gap between the two */
+figcaption * {
+  margin: 0.5rem;
+}
+
+/* sets us up with a 2x2 layout of images */
+@media (min-width: 600px) {
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1vw;
+  }
+}
