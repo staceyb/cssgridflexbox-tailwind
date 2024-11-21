@@ -1,12 +1,12 @@
 import '../css/style.css';
-import '../css/moonsofsaturn.css';
+import '../css/moonsofsaturnflexbox.css';
 
-function MoonsOfSaturnGrid() {
+function MoonsOfSaturnFlexbox() {
   return (
-    <div className="moonsofsaturn">
-      <h1>The Moons of Saturn</h1>
-      <div className="msContainer">
-        <article className="msCard">
+    <div className="moonsofsaturnflex">
+      <h1>The Moons of Saturn (Flexbox)</h1>
+      <div className="msFlexContainer">
+        <article className="msFlexCard">
           <img
             src="/images/fem-mimas.jpg"
             alt="Death Star vs. Mimas, with similar looking craters in the upper right."
@@ -26,7 +26,7 @@ function MoonsOfSaturnGrid() {
             </a>
           </p>
         </article>
-        <article className="msCard">
+        <article className="msFlexCard">
           <img
             src="/images/fem-titan-mosaic.jpg"
             alt="A fuzzy looking world, with darker patches on a mostly light surface."
@@ -47,7 +47,7 @@ function MoonsOfSaturnGrid() {
             </a>
           </p>
         </article>
-        <article className="msCard">
+        <article className="msFlexCard">
           <img
             src="/images/fem-enceladus.jpg"
             alt="Enceladus is a water world."
@@ -68,7 +68,7 @@ function MoonsOfSaturnGrid() {
             </a>
           </p>
         </article>
-        <article className="msCard">
+        <article className="msFlexCard">
           <img
             src="/images/fem-iapetus.jpg"
             alt="A white moon that looks like it has mold growing on one side of it."
@@ -90,7 +90,7 @@ function MoonsOfSaturnGrid() {
             </a>
           </p>
         </article>
-        <article className="msCard">
+        <article className="msFlexCard">
           <img
             src="/images/fem-phoebe.jpg"
             alt="A moon with heavy cratering, making it look more like an asteroid."
@@ -147,4 +147,4 @@ function MoonsOfSaturnGrid() {
   );
 }
 
-export default MoonsOfSaturnGrid;
+export default MoonsOfSaturnFlexbox;
