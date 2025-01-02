@@ -1,6 +1,8 @@
+import React from 'react';
+
 const NotFound = () => (
-  <div>
-    <h1>404 - Page Not Found</h1>
+  <div className="m-auto text-black dark:text-white">
+    <h1>404 - Oops Page Not Found</h1>
   </div>
 );
 
