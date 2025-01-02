@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --astroblue: rgb(19, 68, 110);
+  --astroblue: #13446e;
   --border: #f5f5f5; /* whitesmoke */
+  --darkerastroblue: #13446e80;
 }
 
 @font-face {
@@ -132,22 +133,4 @@ border-color: #e5e7eb;
 ::before,
 ::after {
   border-color: inherit;
-}
-
-/* to figure out */
-
-.button {
-  background-color: var(--astroblue);
-  padding: 0.5rem;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-  display: inline-block;
-  margin-top: 1rem;
-  text-align: center;
-}
-.button:hover {
-  background-color: rgba(19, 68, 110, 0.5);
-  border: solid 1px whitesmoke;
 }

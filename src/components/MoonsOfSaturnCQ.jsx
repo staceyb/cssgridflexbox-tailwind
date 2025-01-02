@@ -1,6 +1,7 @@
 import '../css/moonsofsaturncq.css';
 import { useRef } from 'react';
 import React from 'react';
+import LinkButton from './ButtonLink';
 /* Grid Info: Uses containers and subgrid */
 
 function MoonsOfSaturnCQ() {
@@ -22,15 +23,10 @@ function MoonsOfSaturnCQ() {
               At 198km diameter, Mimas is bigger than the first Death Star
               (120km) but smaller than the second (800km).{' '}
             </p>
-            <p className="link">
-              <a
-                href="https://science.nasa.gov/saturn/moons/mimas/"
-                target="_blank"
-                className="button"
-                rel="noreferrer">
-                More about Mimas
-              </a>
-            </p>
+            <LinkButton
+              url="https://science.nasa.gov/saturn/moons/mimas/"
+              label="More about Mimas"
+              fontsize="sm"></LinkButton>
           </article>
         </div>
         <div className="msCQCard border-[#000000] dark:border-[#f5f5f5]">
@@ -45,15 +41,10 @@ function MoonsOfSaturnCQ() {
               liquid, including rivers, lakes and seas, on its surface. Titan is
               bigger than Earth's moon, and larger than even the planet Mercury.
             </p>
-            <p className="link">
-              <a
-                href="https://science.nasa.gov/saturn/moons/titan/"
-                target="_blank"
-                className="button"
-                rel="noreferrer">
-                More about Titan
-              </a>
-            </p>
+            <LinkButton
+              url="https://science.nasa.gov/saturn/moons/titan/"
+              label="More about Titan"
+              fontsize="sm"></LinkButton>
           </article>
         </div>
         <div className="msCQCard border-[#000000] dark:border-[#f5f5f5]">
@@ -68,15 +59,10 @@ function MoonsOfSaturnCQ() {
               ring, and give clues that its subsurface saltwater ocean could be
               a possible habitat for life.
             </p>
-            <p className="link">
-              <a
-                href="https://science.nasa.gov/saturn/moons/enceladus/"
-                target="_blank"
-                className="button"
-                rel="noreferrer">
-                More about Enceladus
-              </a>
-            </p>
+            <LinkButton
+              url="https://science.nasa.gov/saturn/moons/enceladus/"
+              label="About Enceladus"
+              fontsize="sm"></LinkButton>
           </article>
         </div>
         <div className="msCQCard border-[#000000] dark:border-[#f5f5f5]">
@@ -92,15 +78,10 @@ function MoonsOfSaturnCQ() {
               is the only large moon from which there is a nice view of the
               rings of Saturn.
             </p>
-            <p className="link">
-              <a
-                href="https://science.nasa.gov/saturn/moons/iapetus/"
-                target="_blank"
-                className="button"
-                rel="noreferrer">
-                More about Iapetus
-              </a>
-            </p>
+            <LinkButton
+              url="https://science.nasa.gov/saturn/moons/iapetus/"
+              label="About Iapetus"
+              fontsize="sm"></LinkButton>
           </article>
         </div>
         <div className="msCQCard border-[#000000] dark:border-[#f5f5f5]">
@@ -120,15 +101,10 @@ function MoonsOfSaturnCQ() {
               small moon comes from the outer solar system, an area where there
               is plenty of dark material.
             </p>
-            <p className="link">
-              <a
-                href="https://science.nasa.gov/saturn/moons/phoebe/"
-                target="_blank"
-                className="button"
-                rel="noreferrer">
-                More about Phoebe
-              </a>
-            </p>
+            <LinkButton
+              url="https://science.nasa.gov/saturn/moons/phoebe/"
+              label="More about Phoebe"
+              fontsize="sm"></LinkButton>
           </article>
         </div>
       </div>

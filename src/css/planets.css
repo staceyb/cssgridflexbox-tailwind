@@ -7,7 +7,18 @@
 }
 
 .card .button {
+  background-color: var(--astroblue);
+  padding: 0.5rem;
+  border-radius: 5px;
+  color: white;
   font-size: 1.2rem;
+  display: inline-block;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.card .button:hover {
+  background-color: var(--darkerastroblue);
 }
 
 .card h2 {

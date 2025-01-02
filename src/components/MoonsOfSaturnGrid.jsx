@@ -1,6 +1,7 @@
 import '../css/moonsofsaturn.css';
 import React from 'react';
 import AdditionalLinks from './AdditionalLinks';
+import LinkButton from './ButtonLink';
 /* Grid Info: Uses subgrid */
 
 function MoonsOfSaturnGrid() {
@@ -18,15 +19,10 @@ function MoonsOfSaturnGrid() {
             At 198km diameter, Mimas is bigger than the first Death Star (120km)
             but smaller than the second (800km).{' '}
           </p>
-          <p className="link text-color-[--var(--astroblue)] dark:text-white">
-            <a
-              href="https://science.nasa.gov/saturn/moons/mimas/"
-              target="_blank"
-              className="button"
-              rel="noreferrer">
-              More about Mimas
-            </a>
-          </p>
+          <LinkButton
+            url="https://science.nasa.gov/saturn/moons/mimas/"
+            label="More about Mimas"
+            fontsize="base"></LinkButton>
         </article>
         <article className="msCard">
           <img
@@ -39,15 +35,10 @@ function MoonsOfSaturnGrid() {
             liquid, including rivers, lakes and seas, on its surface. Titan is
             bigger than Earth's moon, and larger than even the planet Mercury.
           </p>
-          <p className="link text-color-[--var(--astroblue)] dark:text-white">
-            <a
-              href="https://science.nasa.gov/saturn/moons/titan/"
-              target="_blank"
-              className="button"
-              rel="noreferrer">
-              More about Titan
-            </a>
-          </p>
+          <LinkButton
+            url="https://science.nasa.gov/saturn/moons/titan/"
+            label="More about Titan"
+            fontsize="base"></LinkButton>
         </article>
         <article className="msCard border-[#000000] dark:border-[#f5f5f5]">
           <img
@@ -60,15 +51,10 @@ function MoonsOfSaturnGrid() {
             ring, and give clues that its subsurface saltwater ocean could be a
             possible habitat for life.
           </p>
-          <p className="link text-color-[--var(--astroblue)] dark:text-white">
-            <a
-              href="https://science.nasa.gov/saturn/moons/enceladus/"
-              target="_blank"
-              className="button"
-              rel="noreferrer">
-              More about Enceladus
-            </a>
-          </p>
+          <LinkButton
+            url="https://science.nasa.gov/saturn/moons/enceladus/"
+            label="More about Enceladus"
+            fontsize="base"></LinkButton>
         </article>
         <article className="msCard">
           <img
@@ -82,15 +68,10 @@ function MoonsOfSaturnGrid() {
             only large moon from which there is a nice view of the rings of
             Saturn.
           </p>
-          <p className="link text-color-[--var(--astroblue)] dark:text-white">
-            <a
-              href="https://science.nasa.gov/saturn/moons/iapetus/"
-              target="_blank"
-              className="button"
-              rel="noreferrer">
-              More about Iapetus
-            </a>
-          </p>
+          <LinkButton
+            url="https://science.nasa.gov/saturn/moons/iapetus/"
+            label="More about Iapetus"
+            fontsize="base"></LinkButton>
         </article>
         <article className="msCard">
           <img
@@ -108,15 +89,10 @@ function MoonsOfSaturnGrid() {
             moon comes from the outer solar system, an area where there is
             plenty of dark material.
           </p>
-          <p className="link text-color-[--var(--astroblue)] dark:text-white">
-            <a
-              href="https://science.nasa.gov/saturn/moons/phoebe/"
-              target="_blank"
-              className="button"
-              rel="noreferrer">
-              More about Phoebe
-            </a>
-          </p>
+          <LinkButton
+            url="https://science.nasa.gov/saturn/moons/phoebe/"
+            label="More about Phoebe"
+            fontsize="base"></LinkButton>
         </article>
       </div>
       <AdditionalLinks></AdditionalLinks>
