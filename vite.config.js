@@ -1,6 +1,6 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
-import browserslistToEsbuild from "browserslist-to-esbuild";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import browserslistToEsbuild from 'browserslist-to-esbuild';
 
 /**
  *  @type {import('vite').UserConfig)
@@ -8,8 +8,8 @@ import browserslistToEsbuild from "browserslist-to-esbuild";
 // https://vitejs.dev/config/
 export default defineConfig(() => {
   return {
-    clearScreen: "false",
-    base: "/",
+    clearScreen: 'false',
+    base: '/',
     build: {
       target: browserslistToEsbuild(),
     },
@@ -20,11 +20,11 @@ export default defineConfig(() => {
       devSourcemap: true,
     },
     server: {
-      open: true,
+      open: false,
       port: 3000,
     },
     coverage: {
-      reporter: ["text", "json", "html"],
+      reporter: ['text', 'json', 'html'],
     },
     plugins: [react()],
   };
