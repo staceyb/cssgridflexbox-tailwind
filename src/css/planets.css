@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   padding: 3rem 1rem;
-  border-bottom: 1px solid whitesmoke;
   gap: 0;
   align-items: center;
 }
@@ -22,14 +21,11 @@
   max-width: 100%;
   border-radius: 5px;
   grid-row: 1 / span 2;
+  object-fit: cover;
 }
 
 .card p {
   margin: 0;
-}
-
-.card:last-child {
-  border-bottom: none;
 }
 
 .feature img {
@@ -66,7 +62,6 @@
     padding: 1rem;
     border-radius: 5px;
     align-items: start;
-    border: 1px solid whitesmoke;
   }
 
   card > * {
@@ -90,7 +85,6 @@
     grid-column: 1 / 3;
     grid-template-rows: 0.2fr 1fr 0.2fr 0.1fr;
     grid-row: span 4;
-    border: 1px solid whitesmoke;
     padding: 1rem;
     border-radius: 5px;
   }
@@ -132,7 +126,6 @@
   }
 
   .card {
-    border: 1px solid whitesmoke;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-row: span 1;
@@ -150,7 +143,7 @@
   }
 
   .card p:last-child {
-    grid-column: 1;
+    grid-column: 1 / 3;
     grid-row: 2;
   }
 
@@ -181,10 +174,9 @@
 
   .card:nth-child(7) {
     grid-area: pluto;
-    border: 1px solid whitesmoke;
   }
 
   .card .button {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }

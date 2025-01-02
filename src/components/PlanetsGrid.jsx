@@ -1,12 +1,13 @@
-import '../css/style.css';
 import '../css/planets.css';
+import React from 'react';
+/* Grid Info:Uses grid-template-areas and subgrid */
 
 export default function PlanetsGrid() {
   return (
-    <>
+    <div className="max-w-[1200px] m-auto text-black dark:text-white">
       <h1>Planets and Moons</h1>
       <div className="card-container">
-        <div className="feature card">
+        <div className="feature card border-2 border-[#000000] dark:border-[#f5f5f5]">
           <h2>Our Solar System</h2>
           <img
             src="/images/fem-new-system.jpg"
@@ -27,13 +28,13 @@ export default function PlanetsGrid() {
             </a>
           </p>
         </div>
-        <div className="card">
-          <h2>Earth and Moon</h2>
+        <div className="card border-2 border-[#000000] dark:border-[#f5f5f5]">
+          <h2 className="text-black dark:text-white">Earth and Moon</h2>
           <img
             src="/images/fem-earth2.jpg"
             alt="The dark side of the moon in front of the Earth as viewed from a spacecraft."
           />
-          <p>
+          <p className="text-black dark:text-white">
             <a
               href="https://images.nasa.gov/details/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth_20129140980_o"
               target="_blank"
@@ -43,7 +44,7 @@ export default function PlanetsGrid() {
             </a>
           </p>
         </div>
-        <div className="card">
+        <div className="card border-2 border-[#000000] dark:border-[#f5f5f5]">
           <h2>Mars, Phobos, and Deimos</h2>
           <img
             src="/images/fem-mars.jpg"
@@ -59,13 +60,13 @@ export default function PlanetsGrid() {
             </a>
           </p>
         </div>
-        <div className="card">
+        <div className="card border-2 border-[#000000] dark:border-[#f5f5f5]">
           <h2>Jupiter and Galilean Moons</h2>
           <img
             src="/images/fem-jupiter.jpg"
             alt="Jupiter and its four Galilean moons."
           />
-          <p>
+          <p className="text-black dark:text-white">
             <a
               href="h https://images.nasa.gov/details/PIA01481"
               target="_blank"
@@ -74,8 +75,8 @@ export default function PlanetsGrid() {
             </a>
           </p>
         </div>
-        <div className="card">
-          <h2>Saturn and its moons</h2>
+        <div className="card border-2 border-[#000000] dark:border-[#f5f5f5]">
+          <h2 className="text-black dark:text-white">Saturn and its moons</h2>
           <img
             src="/images/fem-saturn.jpg"
             alt="Saturn and several of its moons."
@@ -90,13 +91,13 @@ export default function PlanetsGrid() {
             </a>
           </p>
         </div>
-        <div className="card">
+        <div className="card border-2 border-[#000000] dark:border-[#f5f5f5]">
           <h2>Neptune and Triton</h2>
           <img
             src="/images/fem-neptune.jpg"
             alt="Triton, a gigantic moon, sits squarely in front of Neptune."
           />
-          <p>
+          <p className="text-black dark:text-white">
             <a
               href="https://images.nasa.gov/details/PIA00340"
               target="_blank"
@@ -106,7 +107,7 @@ export default function PlanetsGrid() {
             </a>
           </p>
         </div>
-        <div className="card">
+        <div className="card border-2 border-[#000000] dark:border-[#f5f5f5]">
           <h2>Pluto and Charon</h2>
           <img
             src="/images/fem-pluto.jpg"
@@ -123,6 +124,6 @@ export default function PlanetsGrid() {
           </p>
         </div>
       </div>
-    </>
+    </div>
   );
 }
