@@ -1,11 +1,13 @@
-import '../css/style.css';
 import '../css/moonsofsaturn.css';
+import React from 'react';
+import AdditionalLinks from './AdditionalLinks';
+/* Grid Info: Uses subgrid */
 
 function MoonsOfSaturnGrid() {
   return (
-    <div className="moonsofsaturn">
+    <div className="moonsofsaturn max-w-[1200px] m-auto text-black dark:text-white">
       <h1>The Moons of Saturn</h1>
-      <div className="msContainer">
+      <div className="msContainer border-[#000000] dark:border-[#f5f5f5]">
         <article className="msCard">
           <img
             src="/images/fem-mimas.jpg"
@@ -16,7 +18,7 @@ function MoonsOfSaturnGrid() {
             At 198km diameter, Mimas is bigger than the first Death Star (120km)
             but smaller than the second (800km).{' '}
           </p>
-          <p className="link">
+          <p className="link text-color-[--var(--astroblue)] dark:text-white">
             <a
               href="https://science.nasa.gov/saturn/moons/mimas/"
               target="_blank"
@@ -37,7 +39,7 @@ function MoonsOfSaturnGrid() {
             liquid, including rivers, lakes and seas, on its surface. Titan is
             bigger than Earth's moon, and larger than even the planet Mercury.
           </p>
-          <p className="link">
+          <p className="link text-color-[--var(--astroblue)] dark:text-white">
             <a
               href="https://science.nasa.gov/saturn/moons/titan/"
               target="_blank"
@@ -47,7 +49,7 @@ function MoonsOfSaturnGrid() {
             </a>
           </p>
         </article>
-        <article className="msCard">
+        <article className="msCard border-[#000000] dark:border-[#f5f5f5]">
           <img
             src="/images/fem-enceladus.jpg"
             alt="Enceladus is a water world."
@@ -58,7 +60,7 @@ function MoonsOfSaturnGrid() {
             ring, and give clues that its subsurface saltwater ocean could be a
             possible habitat for life.
           </p>
-          <p className="link">
+          <p className="link text-color-[--var(--astroblue)] dark:text-white">
             <a
               href="https://science.nasa.gov/saturn/moons/enceladus/"
               target="_blank"
@@ -80,7 +82,7 @@ function MoonsOfSaturnGrid() {
             only large moon from which there is a nice view of the rings of
             Saturn.
           </p>
-          <p className="link">
+          <p className="link text-color-[--var(--astroblue)] dark:text-white">
             <a
               href="https://science.nasa.gov/saturn/moons/iapetus/"
               target="_blank"
@@ -106,7 +108,7 @@ function MoonsOfSaturnGrid() {
             moon comes from the outer solar system, an area where there is
             plenty of dark material.
           </p>
-          <p className="link">
+          <p className="link text-color-[--var(--astroblue)] dark:text-white">
             <a
               href="https://science.nasa.gov/saturn/moons/phoebe/"
               target="_blank"
@@ -117,32 +119,7 @@ function MoonsOfSaturnGrid() {
           </p>
         </article>
       </div>
-      <ul className="additionalLinks">
-        <li>
-          <a
-            href="https://science.nasa.gov/saturn/moons/dione/"
-            target="_blank"
-            rel="noreferrer">
-            Dione: Cratered on the Wrong Side
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://science.nasa.gov/saturn/moons/tethys/"
-            target="_blank"
-            rel="noreferrer">
-            Tethys: 40% is the Odysseus Crater
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://science.nasa.gov/saturn/moons/rhea/"
-            target="_blank"
-            rel="noreferrer">
-            Rhea: A Moon with Rings?
-          </a>
-        </li>
-      </ul>
+      <AdditionalLinks></AdditionalLinks>
     </div>
   );
 }
