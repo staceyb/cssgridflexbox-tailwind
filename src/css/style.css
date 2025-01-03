@@ -6,41 +6,39 @@
   --astroblue: #13446e;
   --border: #f5f5f5; /* whitesmoke */
   --darkerastroblue: #13446e80;
+  --lighterastroblue: #8aaac380;
 }
 
 @font-face {
   font-family: 'haymakerregular';
-  src: url('./fonts/haymaker-webfont.eot');
   src:
-    url('./fonts/haymaker-webfont.eot?#iefix') format('embedded-opentype'),
     url('./fonts/haymaker-webfont.woff') format('woff'),
-    url('./fonts/haymaker-webfont.ttf') format('truetype'),
-    url('./fonts/haymaker-webfont.svg#haymakerregular') format('svg');
+    url('./fonts/haymaker-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'blanchcaps_inline';
-  src: url('./fonts/blanch_caps_inline-webfont.eot');
   src:
-    url('./fonts/blanch_caps_inline-webfont.eot?#iefix')
-      format('embedded-opentype'),
     url('./fonts/blanch_caps_inline-webfont.woff') format('woff'),
-    url('./fonts/blanch_caps_inline-webfont.ttf') format('truetype'),
-    url('./fonts/blanch_caps_inline-webfont.svg#blanchcaps_inline')
-      format('svg');
+    url('./fonts/blanch_caps_inline-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Noto Sans';
+  src: url('./fonts/noto-sans-v27-latin-regular.ttf');
+  font-display: swap;
+}
+
 body {
-  background-color: whitesmoke;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family:
-    'Open Sans',
+    'Noto Sans',
     system-ui,
     -apple-system,
     BlinkMacSystemFont,
