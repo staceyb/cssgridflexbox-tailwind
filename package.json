@@ -1,9 +1,10 @@
 {
-  "name": "cotd",
-  "version": "0.0.4",
+  "name": "cssgridflex-solarsystem",
+  "version": "1.0.0",
   "private": true,
   "main": "index.jsx",
   "type": "module",
+  "author": "sblaschke",
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
