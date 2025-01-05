@@ -101,26 +101,6 @@ nav {
   font-family: 'blanchcaps_inline', system-ui, sans-serif;
 }
 
-.grid-container-mars {
-  grid-template-areas:
-    'sol10 sol10'
-    'mars meteorite'
-    'mars microscope'
-    'intrepid intrepid';
-}
-
-@media (max-width: 639px) {
-  .grid-container-mars {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'sol10'
-      'mars'
-      'meteorite'
-      'microscope'
-      'intrepid';
-  }
-}
-
 /* Needed to fix bug where setting border-top color is being 
 overwritten by the reset border-color of 
 *, ::before, ::after 

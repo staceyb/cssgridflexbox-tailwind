@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import defaultTheme from 'tailwindcss/defaultTheme';
+// import defaultTheme from 'tailwindcss/defaultTheme';
 
 export default function NavFlex() {
+  const [darkTheme, setDarkTheme] = useState(true);
   return (
     <>
       <nav className="bg-white font-bold  max-w-[1200px] m-auto space-y-2 dark:bg-black">
-        <ul className="group justify-center items-center flex flex-row flex-wrap gap-4 py-4 px-2 sm:justify-end sm:items-end">
+        <ul className="group justify-center items-center flex flex-row flex-wrap gap-4 py-4 sm:justify-end sm:items-end">
           <li className="mr-auto basis-full sm:basis-auto">
             <Link className="text-black dark:text-white" to="/">
               <img
                 src="images/logo192.png"
                 alt="Home."
-                className="logo max-w-[40px]"
+                className="animate-pulse logo max-w-[40px]"
               />
             </Link>
           </li>
@@ -73,11 +74,13 @@ export default function NavFlex() {
           type="checkbox"
           id="theme-box"
           name="dark-theme"
+          defaultChecked={darkTheme ? true : false}
           onChange={(e) => {
             document.documentElement.classList.toggle('dark');
+            setDarkTheme(e.target.checked);
           }}></input>
         <label className="text-black dark:text-white px-1" htmlFor="dark-theme">
-          Check to toggle Light/Dark theme
+          Uncheck for Light Theme
         </label>
       </div>
     </>
