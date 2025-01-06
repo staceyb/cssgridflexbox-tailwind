@@ -26,6 +26,9 @@ export default {
         smmd: '750px',
         smlg: '1000px',
       },
+      gridRowEnd: {
+        14: '14',
+      },
     },
   },
   plugins: [],
