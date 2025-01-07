@@ -2,14 +2,15 @@ import '../css/moonsofsaturncq.css';
 import { useRef } from 'react';
 import React from 'react';
 import LinkButton from './ButtonLink';
+import AdditionalLinks from './AdditionalLinks';
 /* Grid Info: Uses containers and subgrid */
 
 function MoonsOfSaturnCQ() {
   return (
-    <div className="moonsofsaturncq max-w-[1200px] m-auto">
-      <h1 className="text-black dark:text-white">
-        The Moons of Saturn (Container Query)
-      </h1>
+    <div
+      className="moonsofsaturncq max-w-[1200px] m-auto 
+                    text-black dark:text-white">
+      <h1 className="">The Moons of Saturn (Container Query)</h1>
       <div className="msCQContainer text-black dark:text-white border-[#000000] dark:border-[#f5f5f5]">
         <div className="featured">
           <article>
@@ -108,6 +109,7 @@ function MoonsOfSaturnCQ() {
           </article>
         </div>
       </div>
+      <AdditionalLinks></AdditionalLinks>
     </div>
   );
 }
