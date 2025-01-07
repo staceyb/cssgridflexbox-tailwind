@@ -20,7 +20,7 @@ export default function PlanetsGrid() {
             src="/images/fem-new-system.jpg"
             alt="Many of the planets in the solar system, plus a few moons."
           />
-          <p className="hidden xsm:block xsm:col-start-1 col-end-3 xsm:pt-8">
+          <p className="hidden text-lg xsm:block xsm:col-start-1 col-end-3 xsm:pt-8">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             Voluptatum, ad! Asperiores sed quae laudantium eveniet quis
             doloremque, ad veritatis ipsam?
@@ -29,7 +29,7 @@ export default function PlanetsGrid() {
             label="Learn more at NASA"
             url="https://images.nasa.gov/details/PIA03153"
             fontsize="xl"
-            classNames="row-start-3 row-end-4 mt-8 xsm:row-start-4 xsm:row-end-5 text-black dark:text-white"
+            classNames="row-start-3 row-end-4 mt-8 xsm:row-start-4 xsm:row-end-5"
           />
         </div>
         <div
@@ -52,7 +52,7 @@ export default function PlanetsGrid() {
             url="https://images.nasa.gov/details/from-a-million-miles-away-nasa-camera-shows-moon-crossing-face-of-earth_20129140980_o"
             fontsize="xl"
             classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3 
-            text-black dark:text-white"
+            "
           />
         </div>
         <div
@@ -73,8 +73,7 @@ export default function PlanetsGrid() {
             label="Learn more at NASA"
             url="https://images.nasa.gov/details/PIA17305"
             fontsize="xl"
-            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3 
-            text-black dark:text-white"
+            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3"
           />
         </div>
         <div
@@ -96,8 +95,7 @@ export default function PlanetsGrid() {
             label="Learn more at NASA"
             url="https://images.nasa.gov/details/PIA01481"
             fontsize="xl"
-            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3 
-            text-black dark:text-white"
+            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3"
           />
         </div>
         <div
@@ -119,8 +117,7 @@ export default function PlanetsGrid() {
             label="Learn more at NASA"
             url="https://images.nasa.gov/details/PIA01482"
             fontsize="xl"
-            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3 
-            text-black dark:text-white"
+            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3"
           />
         </div>
         <div
@@ -143,8 +140,7 @@ export default function PlanetsGrid() {
             label="Learn more at NASA"
             url="https://images.nasa.gov/details/PIA00340"
             fontsize="xl"
-            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3 
-            text-black dark:text-white"
+            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3"
           />
         </div>
         <div
@@ -167,8 +163,7 @@ export default function PlanetsGrid() {
             label="Learn more at NASA"
             url="https://images.nasa.gov/details/PIA19966"
             fontsize="xl"
-            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3 
-            text-black dark:text-white"
+            classNames="xsm:row-start-3 xsm-row-end-4 smlg:col-start-1 smlg:col-end-3"
           />
         </div>
       </div>

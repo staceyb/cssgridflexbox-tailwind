@@ -6,10 +6,13 @@ export default function NavFlex() {
   const [darkTheme, setDarkTheme] = useState(true);
   return (
     <>
-      <nav className="bg-white font-bold  max-w-[1200px] m-auto space-y-2 dark:bg-black">
-        <ul className="group justify-center items-center flex flex-row flex-wrap gap-4 py-4 sm:justify-end sm:items-end">
+      <nav className="bg-white font-bold max-w-[1200px] m-auto space-y-2 dark:bg-black">
+        <ul
+          className="group justify-center items-center flex flex-row flex-wrap 
+                       gap-4 py-4 sm:justify-end sm:items-end
+                       text-black dark:text-white">
           <li className="mr-auto basis-full sm:basis-auto">
-            <Link className="text-black dark:text-white" to="/">
+            <Link to="/">
               <img
                 src="images/logo192.png"
                 alt="Home."
@@ -19,50 +22,40 @@ export default function NavFlex() {
           </li>
           <li className="text-4xl">
             <Link
-              className="text-black hover:text-[var(--astroblue)] dark:text-white"
+              className="hover:text-[var(--astroblue)]"
               to="/moonsofjupiter">
               Moons Of Jupiter
             </Link>
           </li>
           <li className="text-4xl">
-            <Link
-              className="text-black hover:text-[var(--astroblue)] dark:text-white"
-              to="/saturnmoons">
+            <Link className="hover:text-[var(--astroblue)]" to="/saturnmoons">
               Moons of Saturn
             </Link>
           </li>
           <li className="text-4xl">
             <Link
-              className="text-black hover:text-[var(--astroblue)] dark:text-white"
+              className="hover:text-[var(--astroblue)]"
               to="/saturnmoonsflex">
               Moons of Saturn (Flex)
             </Link>
           </li>
           <li className="text-4xl">
-            <Link
-              className="text-black hover:text-[var(--astroblue)] dark:text-white"
-              to="/mars">
+            <Link className="hover:text-[var(--astroblue)]" to="/mars">
               Mars
             </Link>
           </li>
           <li className="text-4xl">
-            <Link
-              className="text-black hover:text-[var(--astroblue)] dark:text-white"
-              to="/planets">
+            <Link className="hover:text-[var(--astroblue)]" to="/planets">
               Planets
             </Link>
           </li>
           <li className="text-4xl">
-            <Link
-              className="text-black hover:text-[var(--astroblue)] dark:text-white"
-              to="/saturnmoonscq">
+            <Link className="hover:text-[var(--astroblue)]" to="/saturnmoonscq">
               Moons of Saturn (Container Query)
             </Link>
           </li>
           <li className="text-4xl">
-            <Link
-              className="text-black hover:text-[var(--astroblue)] dark:text-white"
-              to="/gridoverlap">
+            <Link className="hover:text-[var(--astroblue)]" to="/gridoverlap">
               Moons (Grid Overlap)
             </Link>
           </li>
@@ -70,7 +63,7 @@ export default function NavFlex() {
       </nav>
       <div className="bg-white dark:bg-black max-w-[1200px] m-auto px-1">
         <input
-          className="bg-white dark:bg-black accent-white dark:accent-darkblue "
+          className="bg-white dark:bg-black accent-[skyblue] dark:accent-[var(--astroblue)]"
           type="checkbox"
           id="theme-box"
           name="dark-theme"
