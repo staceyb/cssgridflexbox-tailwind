@@ -9,7 +9,7 @@ function MoonsOfSaturnFlexbox() {
         The Moons of Saturn (Flexbox)
       </h1>
       <div
-        className="text-black flex flex-wrap flex-col border-bottom-1 dark:text-white
+        className="text-black flex flex-wrap flex-col border-b-1 dark:text-white
       sm:flex-row sm:col-gap[2%] sm:row-gap-8 sm:justify-around sm:mt-8 gap-[2%]
       md:items-end md:justify-start">
         <article className="sm:basis-[32%] sm:grow-2 md:basis-[18.4%] py-12 px-4">
