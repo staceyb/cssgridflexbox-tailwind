@@ -1,8 +1,15 @@
-import { expect, test } from 'vitest';
+import { describe, expect, test } from 'vitest';
 
-test('test add', async () => {
-  const a = 3;
-  const b = 4;
+describe('test tests', () => {
+  test('test add', async () => {
+    const a = 3;
+    const b = 4;
 
-  expect(a + b).toBe(7);
+    expect.hasAssertions();
+    expect(a + b).toBe(7);
+  });
+
+  test.fails('Arrays should be equal', () => {
+    expect([1, 2, 3]).toBe([1, 2, 3]);
+  });
 });

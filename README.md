@@ -1,4 +1,5 @@
-#A basic Vite Starter Project for React and React Router
+#A Planetary project using React, React Router and Vite, as the build tool, showcasing pages using grids and flexboxes.
+The first part of the project used vanilla CSS to style the grids and flexboxes and second half replaced vanilla CSS with Tailwind CSS. A light and dark theme was added via Tailwind also. One page is still vanilla CSS demonstrating that Tailwind and regular CSS can be used simultaneously. The Tailwind theme was extended with additional breakpoints and an additional grid row to fit the original requirements of the design.
 
 A modern, faster build tool called Vite (French word for "fast",pronounced Veet).
 
