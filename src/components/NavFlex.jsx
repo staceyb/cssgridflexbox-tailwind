@@ -16,7 +16,7 @@ export default function NavFlex() {
               <img
                 src="images/logo192.png"
                 alt="Home."
-                className="animate-pulse logo max-w-[40px]"
+                className="logo max-w-[40px]"
               />
             </Link>
           </li>
@@ -66,13 +66,13 @@ export default function NavFlex() {
           className="bg-white dark:bg-black accent-[skyblue] dark:accent-[var(--astroblue)]"
           type="checkbox"
           id="theme-box"
-          name="dark-theme"
+          name="darktheme"
           defaultChecked={darkTheme ? true : false}
           onChange={(e) => {
             document.documentElement.classList.toggle('dark');
             setDarkTheme(e.target.checked);
           }}></input>
-        <label className="text-black dark:text-white px-1" htmlFor="dark-theme">
+        <label className="text-black dark:text-white px-1" htmlFor="theme-box">
           Uncheck for Light Theme
         </label>
       </div>
