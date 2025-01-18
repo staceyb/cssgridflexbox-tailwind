@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 // import defaultTheme from 'tailwindcss/defaultTheme';
+import logo from '/src/imgs/logo192.png?w=80&h=80&format=png';
 
 export default function NavFlex() {
   const [darkTheme, setDarkTheme] = useState(true);
@@ -16,8 +17,8 @@ export default function NavFlex() {
               <img
                 width="40"
                 height="40"
-                src="images/logo192.png"
-                alt="Home."
+                src={logo}
+                alt="React blue astral logo. Click to go to home page."
                 className="logo max-w-[40px]"
               />
             </Link>
