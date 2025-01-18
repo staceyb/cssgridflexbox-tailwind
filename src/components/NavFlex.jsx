@@ -14,6 +14,8 @@ export default function NavFlex() {
           <li className="mr-auto basis-full sm:basis-auto">
             <Link to="/">
               <img
+                width="40"
+                height="40"
                 src="images/logo192.png"
                 alt="Home."
                 className="logo max-w-[40px]"

@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import browserslistToEsbuild from 'browserslist-to-esbuild';
-//import { imagetools } from 'vite-imagetools'
+import { imagetools } from 'vite-imagetools';
 
 /**
  *  @type {import('vite').UserConfig}
@@ -24,8 +24,17 @@ export default defineConfig({
     open: false,
     port: 3000,
   },
-  coverage: {
-    reporter: ['text', 'json', 'html'],
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+    },
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    imagetools({
+      exclude: 'public/**/*',
+    }),
+  ],
 });
