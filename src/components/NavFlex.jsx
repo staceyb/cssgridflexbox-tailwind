@@ -7,7 +7,7 @@ export default function NavFlex() {
   const [darkTheme, setDarkTheme] = useState(true);
   return (
     <>
-      <nav className="bg-white font-bold max-w-[1200px] m-auto space-y-2 dark:bg-black">
+      <nav className="bg-white max-w-[1200px] m-auto space-y-2 dark:bg-black">
         <ul
           className="group justify-center items-center flex flex-row flex-wrap 
                        gap-4 py-4 sm:justify-end sm:items-end
@@ -23,42 +23,50 @@ export default function NavFlex() {
               />
             </Link>
           </li>
-          <li className="text-4xl">
+          <li className="text-1xl">
             <Link
-              className="hover:text-[var(--astroblue)]"
+              className="hover:text-[var(--lighterastroblue)]"
               to="/moonsofjupiter">
               Moons Of Jupiter
             </Link>
           </li>
-          <li className="text-4xl">
-            <Link className="hover:text-[var(--astroblue)]" to="/saturnmoons">
+          <li className="text-1xl">
+            <Link
+              className="hover:text-[var(--lighterastroblue)]"
+              to="/saturnmoons">
               Moons of Saturn
             </Link>
           </li>
-          <li className="text-4xl">
+          <li className="text-1xl">
             <Link
-              className="hover:text-[var(--astroblue)]"
+              className="hover:text-[var(--lighterastroblue)]"
               to="/saturnmoonsflex">
               Moons of Saturn (Flex)
             </Link>
           </li>
-          <li className="text-4xl">
-            <Link className="hover:text-[var(--astroblue)]" to="/mars">
+          <li className="text-1xl">
+            <Link className="hover:text-[var(--lighterastroblue)]" to="/mars">
               Mars
             </Link>
           </li>
-          <li className="text-4xl">
-            <Link className="hover:text-[var(--astroblue)]" to="/planets">
+          <li className="text-1xl">
+            <Link
+              className="hover:text-[var(--lighterastroblue)]"
+              to="/planets">
               Planets
             </Link>
           </li>
-          <li className="text-4xl">
-            <Link className="hover:text-[var(--astroblue)]" to="/saturnmoonscq">
+          <li className="text-1xl">
+            <Link
+              className="hover:text-[var(--lighterastroblue)]"
+              to="/saturnmoonscq">
               Moons of Saturn (Container Query)
             </Link>
           </li>
-          <li className="text-4xl">
-            <Link className="hover:text-[var(--astroblue)]" to="/gridoverlap">
+          <li className="text-1xl">
+            <Link
+              className="hover:text-[var(--lighterastroblue)]"
+              to="/gridoverlap">
               Moons (Grid Overlap)
             </Link>
           </li>
@@ -66,7 +74,7 @@ export default function NavFlex() {
       </nav>
       <div className="bg-white dark:bg-black max-w-[1200px] m-auto px-1">
         <input
-          className="bg-white dark:bg-black accent-[skyblue] dark:accent-[var(--astroblue)]"
+          className="bg-white dark:bg-black dark:accent-[var(--lighterastroblue)]"
           type="checkbox"
           id="theme-box"
           name="darktheme"

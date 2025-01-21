@@ -6,7 +6,7 @@
   --astroblue: #13446e;
   --border: #f5f5f5; /* whitesmoke */
   --darkerastroblue: #13446e80;
-  --lighterastroblue: #8aaac380;
+  --lighterastroblue: #048cf4;
 }
 
 @font-face {
@@ -98,7 +98,7 @@ h3 {
 }
 
 nav {
-  font-family: 'blanchcaps_inline', system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 /* Needed to fix bug where setting border-top color is being 
