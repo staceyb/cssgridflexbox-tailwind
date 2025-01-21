@@ -1,26 +1,25 @@
 import React from 'react';
 
 import jupiterFallback from '/src/imgs/fem-jupiter.jpg?w=630';
-import jupiterWebpSrc from '/src/imgs/fem-jupiter.jpg?w=630;960&format=webp&as=srcset';
+import jupiterAVIFSrc from '/src/imgs/fem-jupiter.jpg?w=320,630;960,1920&format=avif&as=srcset';
 
 import neptuneFallback from '/src/imgs/fem-neptune.jpg?w=630';
-import neptuneWebpSrc from '/src/imgs/fem-neptune.jpg?w=630;960&format=webp&as=srcset';
+import neptuneAVIFSrc from '/src/imgs/fem-neptune.jpg?w=320,630;960,1920&format=avif&as=srcset';
 
 import saturnFallback from '/src/imgs/fem-saturn.jpg?w=630';
-import saturnWebpSrc from '/src/imgs/fem-saturn.jpg?w=630;960&format=webp&as=srcset';
+import saturnAVIFSrc from '/src/imgs/fem-saturn.jpg?w=320,630;960,1920&format=avif&as=srcset';
 
 import plutoFallback from '/src/imgs/fem-pluto.jpg?w=630';
-import plutoWebpSrc from '/src/imgs/fem-pluto.jpg?w=630;960&format=webp&as=srcset';
+import plutoAVIFSrc from '/src/imgs/fem-pluto.jpg?w=320,630;960,1920&format=avif&as=srcset';
 
 function GridOverlap() {
-  console.log(jupiterWebpSrc);
   return (
     <div className="grid max-w-[1200px] mx-auto sm:grid-cols-[1fr_1fr] sm:gap-[1vw]">
       <figure className="grid grid-cols-[1fr] grid-rows-[60%_40%] items-center gap-8">
         <img
           className="row-start-1 row-end-3 col-start-1 col-end-2"
           sizes="(max-width: 640px) calc(100vw-39px), 519px"
-          srcSet={jupiterWebpSrc}
+          srcSet={jupiterAVIFSrc}
           src={jupiterFallback}
           width="488"
           height="488"
@@ -35,7 +34,7 @@ function GridOverlap() {
         <img
           className="row-start-1 row-end-3 col-start-1 col-end-2"
           sizes="(max-width: 640px) calc(100vw-39px), 519px"
-          srcSet={saturnWebpSrc}
+          srcSet={saturnAVIFSrc}
           src={saturnFallback}
           width="488"
           height="488"
@@ -50,7 +49,7 @@ function GridOverlap() {
         <img
           className="row-start-1 row-end-3 col-start-1 col-end-2"
           sizes="(max-width: 640px) calc(100vw-39px), 519px"
-          srcSet={neptuneWebpSrc}
+          srcSet={neptuneAVIFSrc}
           src={neptuneFallback}
           width="488"
           height="488"
@@ -65,7 +64,7 @@ function GridOverlap() {
         <img
           className="row-start-1 row-end-3 col-start-1 col-end-2"
           sizes="(max-width: 640px) calc(100vw-39px), 519px"
-          srcSet={plutoWebpSrc}
+          srcSet={plutoAVIFSrc}
           src={plutoFallback}
           width="488"
           height="488"
