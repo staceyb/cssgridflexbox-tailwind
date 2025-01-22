@@ -3,6 +3,21 @@ import AdditionalLinks from './AdditionalLinks';
 import LinkButton from './ButtonLink';
 /* Grid Info: Uses subgrid */
 
+import mimasFallback from '/src/imgs/fem-mimas.jpg?w=590';
+import mimasAVIFSrc from '/src/imgs/fem-mimas.jpg?w=200,400,610,1220&format=avif&as=srcset';
+
+import titanFallback from '/src/imgs/fem-titan-mosaic.jpg?w=300';
+import titanAVIFSrc from '/src/imgs/fem-titan-mosaic.jpg?w=200,300,600&format=avif&as=srcset';
+
+import enceladusFallback from '/src/imgs/fem-enceladus.jpg?w=300';
+import enceladusAVIFSrc from '/src/imgs/fem-enceladus.jpg?w=200,300,600&format=avif&as=srcset';
+
+import iapetusFallback from '/src/imgs/fem-iapetus.jpg?w=300';
+import iapetusAVIFSrc from '/src/imgs/fem-iapetus.jpg?w=200,300,600&format=avif&as=srcset';
+
+import phoebeFallback from '/src/imgs/fem-phoebe.jpg?w=300';
+import phoebeAVIFSrc from '/src/imgs/fem-phoebe.jpg?w=200,300,600&format=avif&as=srcset';
+
 function MoonsOfSaturn() {
   return (
     <div className="moonsofsaturn max-w-[1200px] m-auto text-black dark:text-white">
@@ -19,14 +34,19 @@ function MoonsOfSaturn() {
           md:row-start-1 md:row-end-3
           lg:grid-rows-[minmax(0,_1fr)_minmax(0,_0.1fr)_minmax(0,_0.2fr)_auto] 
           lg:gap-8 lg:grid-cols-[1fr,1fr] lg:col-start-1 lg:col-end-3">
-          <img
-            className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
+          <picture>
+            <source srcSet={mimasAVIFSrc} type="image/avif" />
+            <img
+              width="600"
+              height="600"
+              src={mimasFallback}
+              className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
             sm:col-start-1 sm:col-end-4 sm:row-start-1 sm:row-end-2 sm:max-w-full
             md:col-start-1 md:col-end-4
             lg:col-start-1 lg:col-end-3 lg:row-start-1 lg:row-end-1"
-            src="/images/fem-mimas.jpg"
-            alt="Death Star vs. Mimas, with similar looking craters in the upper right."
-          />
+              alt="Death Star vs. Mimas, with similar looking craters in the upper right."
+            />
+          </picture>
           <h2
             className="col-start-1 col-end-2 mb-4 text-left 
           sm:col-span-4 sm:row-start-2 sm:row-end-3 
@@ -57,14 +77,19 @@ function MoonsOfSaturn() {
         md:col-start-4 md:col-end-5 md:row-start-1 md:row-end-2 md:block
         lg:grid-rows-subgrid lg:grid-col-[1fr_1fr]
         lg:grid lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:row-end-1">
-          <img
-            className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
+          <picture>
+            <source srcSet={titanAVIFSrc} type="image/avif" />
+            <img
+              width="600"
+              height="600"
+              src={titanFallback}
+              className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
             sm:col-start-4 sm:col-end-5 sm:grid-row-start-1 sm:grid-row-end-4 
             sm:max-w-[100px] md:max-w-[150px]
             lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
-            src="/images/fem-titan-mosaic.jpg"
-            alt="A fuzzy looking world, with darker patches on a mostly light surface."
-          />
+              alt="A fuzzy looking world, with darker patches on a mostly light surface."
+            />
+          </picture>
           <h2
             className="text-left mb-4 
           sm:col-start-1 sm:col-end-4 sm:row-start-1 sm:row-span-1
@@ -97,14 +122,19 @@ function MoonsOfSaturn() {
           lg:grid-rows-subgrid lg-grid-col-{1fr_1fr]
           lg:grid lg:col-start-4 lg:col-end-5 lg:row-start-1 lg:row-end-1
           lg:border-t lg:border-solid">
-          <img
-            className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
+          <picture>
+            <source srcSet={enceladusAVIFSrc} type="image/avif" />
+            <img
+              width="600"
+              height="600"
+              src={enceladusFallback}
+              className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
             sm:col-start-4 sm:col-end-5 sm:grid-row-start-1 sm:grid-row-end-4 
             sm:max-w-[100px] md:max-w-[150px]
             lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
-            src="/images/fem-enceladus.jpg"
-            alt="Enceladus is a water world."
-          />
+              alt="Enceladus is a water world."
+            />
+          </picture>
           <h2
             className="text-left mb-4 
             sm:col-start-1 sm:col-end-4 sm:row-start-1 sm:row-span-1 
@@ -138,15 +168,20 @@ function MoonsOfSaturn() {
         lg:grid-rows-subgrid lg-grid-col-{1fr_1fr]
         lg:grid lg:col-start-3 lg:col-end-4 lg:row-start-2 lg:row-end-3
         lg:border-t">
-          <img
-            className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
+          <picture>
+            <source srcSet={iapetusAVIFSrc} type="image/avif" />
+            <img
+              width="600"
+              height="600"
+              src={iapetusFallback}
+              className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
             sm:col-start-4 sm:col-end-5 sm:grid-row-start-1 sm:grid-row-end-4
             md-row-start-1 md:row-end-2 
             sm:max-w-[100px] md:max-w-[150px]
             lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
-            src="/images/fem-iapetus.jpg"
-            alt="A white moon that looks like it has mold growing on one side of it."
-          />
+              alt="A white moon that looks like it has mold growing on one side of it."
+            />
+          </picture>
           <h2
             className="text-left mb-4 sm:col-start-1 
           sm:col-end-4 sm:row-start-1 sm:row-span-1 
@@ -182,15 +217,20 @@ function MoonsOfSaturn() {
         lg:grid-rows-subgrid lg-grid-col-{1fr_1fr]
         lg:grid lg:col-start-4 lg:col-end-5 lg:row-start-2 lg:row-end-3
         lg:border-t">
-          <img
-            className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
+          <picture>
+            <source srcSet={phoebeAVIFSrc} type="image/avif" />
+            <img
+              width="600"
+              height="600"
+              src={phoebeFallback}
+              className="col-start-2 col-end-3 row-start-1 row-end-3 rounded-md self-start 
             sm:col-start-4 sm:col-end-5 sm:grid-row-start-1 sm:grid-row-end-4 
             sm:max-w-[100px] md:max-w-[150px]
             md-row-start-1 md:row-end-2
             lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-2"
-            src="/images/fem-phoebe.jpg"
-            alt="A moon with heavy cratering, making it look more like an asteroid."
-          />
+              alt="A moon with heavy cratering, making it look more like an asteroid."
+            />
+          </picture>
           <h2
             className="text-left mb-4 
             sm:col-start-1 sm:col-end-4 sm:row-start-1 

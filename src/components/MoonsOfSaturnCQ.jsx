@@ -5,6 +5,21 @@ import LinkButton from './ButtonLink';
 import AdditionalLinks from './AdditionalLinks';
 /* Grid Info: Uses containers and subgrid */
 
+import mimasFallback from '/src/imgs/fem-mimas.jpg?w=590';
+import mimasAVIFSrc from '/src/imgs/fem-mimas.jpg?w=200,400,610,1220&format=avif&as=srcset';
+
+import titanFallback from '/src/imgs/fem-titan-mosaic.jpg?w=300';
+import titanAVIFSrc from '/src/imgs/fem-titan-mosaic.jpg?w=200,300,600&format=avif&as=srcset';
+
+import enceladusFallback from '/src/imgs/fem-enceladus.jpg?w=300';
+import enceladusAVIFSrc from '/src/imgs/fem-enceladus.jpg?w=200,300,600&format=avif&as=srcset';
+
+import iapetusFallback from '/src/imgs/fem-iapetus.jpg?w=300';
+import iapetusAVIFSrc from '/src/imgs/fem-iapetus.jpg?w=200,300,600&format=avif&as=srcset';
+
+import phoebeFallback from '/src/imgs/fem-phoebe.jpg?w=300';
+import phoebeAVIFSrc from '/src/imgs/fem-phoebe.jpg?w=200,300,600&format=avif&as=srcset';
+
 function MoonsOfSaturnCQ() {
   return (
     <div
@@ -14,11 +29,16 @@ function MoonsOfSaturnCQ() {
       <div className="msCQContainer text-black dark:text-white border-[#000000] dark:border-[#f5f5f5]">
         <div className="featured">
           <article>
-            <img
-              fetchpriority="high"
-              src="/images/fem-mimas.jpg"
-              alt="Death Star vs. Mimas, with similar looking craters in the upper right."
-            />
+            <picture>
+              <source srcSet={mimasAVIFSrc} type="image/avif" />
+              <img
+                width="600"
+                height="600"
+                src={mimasFallback}
+                fetchpriority="high"
+                alt="Death Star vs. Mimas, with similar looking craters in the upper right."
+              />
+            </picture>
             <h2>That's No Moon. It's a Space Station.</h2>
             <p className="text">
               At 198km diameter, Mimas is bigger than the first Death Star
@@ -32,10 +52,15 @@ function MoonsOfSaturnCQ() {
         </div>
         <div className="msCQCard border-[#000000] dark:border-[#f5f5f5]">
           <article>
-            <img
-              src="/images/fem-titan-mosaic.jpg"
-              alt="A fuzzy looking world, with darker patches on a mostly light surface."
-            />
+            <picture>
+              <source srcSet={titanAVIFSrc} type="image/avif" />
+              <img
+                width="600"
+                height="600"
+                src={titanFallback}
+                alt="A fuzzy looking world, with darker patches on a mostly light surface."
+              />
+            </picture>
             <h2>Titan's Ethane Lake</h2>
             <p className="text">
               Titan is the only world besides Earth that has standing bodies of
@@ -50,10 +75,15 @@ function MoonsOfSaturnCQ() {
         </div>
         <div className="msCQCard border-[#000000] dark:border-[#f5f5f5]">
           <article>
-            <img
-              src="/images/fem-enceladus.jpg"
-              alt="Enceladus is a water world."
-            />
+            <picture>
+              <source srcSet={enceladusAVIFSrc} type="image/avif" />
+              <img
+                width="600"
+                height="600"
+                src={enceladusFallback}
+                alt="Enceladus is a water world."
+              />
+            </picture>
             <h2>Enceladus: Geyser World</h2>
             <p className="text">
               Geysers venting from this ocean world add material to Saturn's E
@@ -68,10 +98,15 @@ function MoonsOfSaturnCQ() {
         </div>
         <div className="msCQCard border-[#000000] dark:border-[#f5f5f5]">
           <article>
-            <img
-              src="/images/fem-iapetus.jpg"
-              alt="A white moon that looks like it has mold growing on one side of it."
-            />
+            <picture>
+              <source srcSet={iapetusAVIFSrc} type="image/avif" />
+              <img
+                width="600"
+                height="600"
+                src={iapetusFallback}
+                alt="A white moon that looks like it has mold growing on one side of it."
+              />
+            </picture>
             <h2>Iapetus: Yin and Yang</h2>
             <p className="text">
               Saturn has tidally locked Iapetus. The moon always presents the
@@ -87,10 +122,15 @@ function MoonsOfSaturnCQ() {
         </div>
         <div className="msCQCard border-[#000000] dark:border-[#f5f5f5]">
           <article>
-            <img
-              src="/images/fem-phoebe.jpg"
-              alt="A moon with heavy cratering, making it look more like an asteroid."
-            />
+            <picture>
+              <source srcSet={phoebeAVIFSrc} type="image/avif" />
+              <img
+                width="600"
+                height="600"
+                src={phoebeFallback}
+                alt="A moon with heavy cratering, making it look more like an asteroid."
+              />
+            </picture>
             <h2>Phoebe</h2>
             <p className="text">
               Unlike most major moons orbiting Saturn, Phoebe is very dark and
