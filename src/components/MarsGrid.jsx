@@ -18,9 +18,13 @@ import PIA05208Fallback from '/src/imgs/PIA05208~small.jpg?w=591';
 
 function MarsGrid() {
   return (
-    <>
+    <div className="text-black dark:text-white">
       <h1>Mars</h1>
-      <div className="grid grid-cols-[1fr] [grid-template-areas:'sol10''mars''meteorite''microscope''intrepid'] sm:[grid-template-areas:'sol10_sol10''mars_meteorite''mars_microscope''intrepid_intrepid'] sm:grid-cols-[1fr_1fr] gap-[1rem] max-w-[980px] mx-auto">
+      <div
+        className="grid grid-cols-[1fr] 
+      [grid-template-areas:'sol10''mars''meteorite''microscope''intrepid'] 
+      sm:[grid-template-areas:'sol10_sol10''mars_meteorite''mars_microscope''intrepid_intrepid'] 
+      sm:grid-cols-[1fr_1fr] gap-[1rem] max-w-[980px] mx-auto">
         <picture className="[grid-area:sol10]">
           <source srcSet={PIA01546AVIFSrc} type="image/avif" />
           <img
@@ -52,7 +56,7 @@ function MarsGrid() {
           <img alt="Mars Under the Microscope color" src={PIA05208Fallback} />
         </picture>
       </div>
-    </>
+    </div>
   );
 }
 
