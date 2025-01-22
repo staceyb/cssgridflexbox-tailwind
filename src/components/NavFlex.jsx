@@ -19,7 +19,7 @@ export default function NavFlex() {
                 height="40"
                 src={logo}
                 alt="React blue astral logo. Click to go to home page."
-                className="logo max-w-[40px]"
+                className="animate-pulse logo max-w-[40px]"
               />
             </Link>
           </li>

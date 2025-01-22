@@ -101,6 +101,17 @@ nav {
   font-family: system-ui, sans-serif;
 }
 
+/* Tone down the animation for those who 
+prefer reduced motion */
+.animate-pulse {
+  animation-duration: 10s;
+}
+@media (prefers-reduced-motion) {
+  .animate-pulse {
+    animation: none;
+  }
+}
+
 /* Needed to fix bug where setting border-top color is being 
 overwritten by the reset border-color of 
 *, ::before, ::after 
