@@ -3,6 +3,27 @@ import LinkButton from './ButtonLink';
 //console.log(import.meta.env); //Get environment data
 /* Grid Info:Uses grid-template-areas and subgrid */
 
+import solarSysFallback from '/src/imgs/fem-new-system.jpg?w=760';
+import solarSysAVIFSrc from '/src/imgs/fem-new-system.jpg?w=390;760;916&format=avif&as=srcset';
+
+import jupiterFallback from '/src/imgs/fem-jupiter.jpg?w=440';
+import jupiterAVIFSrc from '/src/imgs/fem-jupiter.jpg?w=200;390;440&format=avif&as=srcset';
+
+import marsFallback from '/src/imgs/fem-mars.jpg?w=440';
+import marsAVIFSrc from '/src/imgs/fem-mars.jpg?w=200;390;440&format=avif&as=srcset';
+
+import plutoFallback from '/src/imgs/fem-pluto.jpg?w=440';
+import plutoAVIFSrc from '/src/imgs/fem-pluto.jpg?w=200;390;440&format=avif&as=srcset';
+
+import saturnFallback from '/src/imgs/fem-saturn.jpg?w=440';
+import saturnAVIFSrc from '/src/imgs/fem-saturn.jpg?w=200;390;440&format=avif&as=srcset';
+
+import neptuneFallback from '/src/imgs/fem-neptune.jpg?w=440';
+import neptuneAVIFSrc from '/src/imgs/fem-neptune.jpg?w=200;390;440&format=avif&as=srcset';
+
+import earthFallback from '/src/imgs/fem-earth2.jpg?w=440';
+import earthAVIFSrc from '/src/imgs/fem-earth2.jpg?w=200;390;440&format=avif&as=srcset';
+
 export default function PlanetsGrid() {
   return (
     <div className="max-w-[1200px] m-auto text-black dark:text-white">
@@ -17,7 +38,10 @@ export default function PlanetsGrid() {
           </h2>
           <img
             className="col-start-1 col-end-3 row-start-2 row-end-3"
-            src="/images/fem-new-system.jpg"
+            srcSet={solarSysAVIFSrc}
+            src={solarSysFallback}
+            width="916"
+            height="529"
             alt="Many of the planets in the solar system, plus a few moons."
           />
           <p className="hidden text-lg xsm:block xsm:col-start-1 col-end-3 xsm:pt-8">
@@ -44,7 +68,9 @@ export default function PlanetsGrid() {
             className="col-start-2 col-end-3 rounded-lg row-start-1 row-end-3 
             smlg:col-start-2 smlg:col-end-2 smlg:row-start-1 smlg:row-end-3 
             xsm:col-start-1 xsm:col-end-2 xsm:row-start-2 xsm:row-end-2"
-            src="/images/fem-earth2.jpg"
+            srcSet={earthAVIFSrc}
+            sizes="(max-width:640px) 50vw, 385px"
+            src={earthFallback}
             alt="The dark side of the moon in front of the Earth as viewed from a spacecraft."
           />
           <LinkButton
@@ -66,7 +92,9 @@ export default function PlanetsGrid() {
             className="col-start-2 col-end-3 rounded-lg row-start-1 row-end-3
             smlg:col-start-2 smlg:col-end-2 smlg:row-start-1 smlg:row-end-3  
             xsm:col-start-1 xsm:col-end-2 xsm:row-start-2 xsm:row-end-2"
-            src="/images/fem-mars.jpg"
+            srcSet={marsAVIFSrc}
+            sizes="(max-width:640px) 50vw, 385px"
+            src={marsFallback}
             alt="Part of Mars with two tiny asteroid-looking moons."
           />
           <LinkButton
@@ -88,7 +116,9 @@ export default function PlanetsGrid() {
             className="col-start-2 col-end-3 rounded-lg row-start-1 row-end-3 
             smlg:col-start-2 smlg:col-end-2 smlg:row-start-1 smlg:row-end-3 
             xsm:col-start-1 xsm:col-end-2 xsm:row-start-2 xsm:row-end-2"
-            src="/images/fem-jupiter.jpg"
+            srcSet={jupiterAVIFSrc}
+            sizes="(max-width:640px) 50vw, 385px"
+            src={jupiterFallback}
             alt="Jupiter and its four Galilean moons."
           />
           <LinkButton
@@ -110,7 +140,9 @@ export default function PlanetsGrid() {
             className="col-start-2 col-end-3 rounded-lg row-start-1 row-end-3 
             smlg:col-start-2 smlg:col-end-2 smlg:row-start-1 smlg:row-end-3 
             xsm:col-start-1 xsm:col-end-2 xsm:row-start-2 xsm:row-end-2"
-            src="/images/fem-saturn.jpg"
+            srcSet={saturnAVIFSrc}
+            sizes="(max-width:640px) 50vw, 385px"
+            src={saturnFallback}
             alt="Saturn and several of its moons."
           />
           <LinkButton
@@ -133,7 +165,9 @@ export default function PlanetsGrid() {
             className="col-start-2 col-end-3 rounded-lg row-start-1 row-end-3 
             smlg:col-start-2 smlg:col-end-2 smlg:row-start-1 smlg:row-end-3 
             xsm:col-start-1 xsm:col-end-2 xsm:row-start-2 xsm:row-end-2"
-            src="/images/fem-neptune.jpg"
+            srcSet={neptuneAVIFSrc}
+            sizes="(max-width:640px) 50vw, 385px"
+            src={neptuneFallback}
             alt="Triton, a gigantic moon, sits squarely in front of Neptune."
           />
           <LinkButton
@@ -156,7 +190,9 @@ export default function PlanetsGrid() {
             className="col-start-2 col-end-3 rounded-lg row-start-1 row-end-3 
             smlg:col-start-2 smlg:col-end-2 smlg:row-start-1 smlg:row-end-3 
             xsm:col-span-2 xsm:row-start-2 xsm:row-end-2"
-            src="/images/fem-pluto.jpg"
+            srcSet={plutoAVIFSrc}
+            sizes="(max-width:640px) 50vw, 385px"
+            src={plutoFallback}
             alt="Although Pluto is not technically a planet anymore, this photo of it with its moon Charon is pretty cool."
           />
           <LinkButton
